@@ -1,7 +1,10 @@
 <?php
 
 
-function autenticar(string $usuario, string $password) : bool {
+class Autentificacion{
+
+
+   public function autenticar(string $usuario, string $password) : bool {
     // echo "$usuario", "$password";
     // exit();
     $valid_password = '1234';
@@ -10,4 +13,6 @@ function autenticar(string $usuario, string $password) : bool {
     } else {
         return false;
     }
+}
+    
 }
